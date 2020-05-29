@@ -1,0 +1,33 @@
+<div class="col-md-6 task-container">
+  <div class="imgstyle">
+    <img  class="images" src="https://hackernoon.com/drafts/gw2v3aiv.png"/>
+  </div>
+  
+
+    <table class="table">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Title/Description</th>
+      <th>Priority</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let task of tasks">
+      <td class="hidden">{{task.id}}</td>
+      <td>{{task.description}}</td>
+      <td>{{task.priority}}</td>
+      <td>{{task.status}}</td>
+     
+      <td><button class="btn btn-danger" (click)="deleteTask(task)"> Delete</button>
+        <button class="btn btn-primary" (click)="EditTask(task)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <br/>
+  <button class="btn btn-success" style="width:100px" (click)="AddTask()"> Add Task</button>
+
+</div>

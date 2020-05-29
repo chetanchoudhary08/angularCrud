@@ -1,0 +1,12 @@
+.task-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.imgstyle{
+  margin-top: 10px;
+}
+ .hidden{
+   display: none;
+ }
